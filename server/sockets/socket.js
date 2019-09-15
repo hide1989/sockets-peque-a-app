@@ -28,7 +28,7 @@ io.on('connection', (client) => {
 
         console.log(data);
 
-        client.broadcast.emit('enviarMensaje', data);
+        client.broadcast.emit('enviarMensaje', data); //si se utiliza la propiedad broadcast, todos los conectados reciben respuesta del server
 
         /*  if (message.usuario) {
 
